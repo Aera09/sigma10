@@ -1,3 +1,5 @@
+#Implement a basic Generative Adversarial Network (GAN) to generate new, synthetic images (e.g., handwritten digits).
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -118,3 +120,4 @@ generator = Generator(latent_dim, image_dim)
 discriminator = Discriminator(image_dim)
 
 train_gan(generator, discriminator, image_size, latent_dim, epochs=10000, batch_size=64)
+
